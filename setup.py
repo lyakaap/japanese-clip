@@ -13,7 +13,7 @@ setup(
     author="rinna Co., Ltd.",
     description="Japanese CLIP",
     long_description=open("README.md", "r", encoding="utf-8").read(),
-    url="https://github.com/rinnakk/japanese-clip",
+    url="https://github.com/lyakaap/japanese-clip",
     long_description_content_type="text/markdown",
     package_dir={'': 'src'},
     packages=find_packages(where='src'),
