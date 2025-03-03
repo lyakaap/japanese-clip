@@ -17,7 +17,7 @@ from typing import Union
 import json
 import torch
 from torchvision import transforms as T
-from huggingface_hub import hf_hub_url, cached_download
+from huggingface_hub import hf_hub_url, hf_hub_download
 import os
 
 from .clip import CLIPModel
@@ -62,9 +62,9 @@ def _transform(image_size):
 
 def _download(repo_id: str, cache_dir: str):
     config_file_url = hf_hub_url(repo_id=repo_id, filename=CONFIG_FILE)
-    cached_download(config_file_url, cache_dir=cache_dir)
+    hf_hub_download(config_file_url, cache_dir=cache_dir)
     model_file_url = hf_hub_url(repo_id=repo_id, filename=MODEL_FILE)
-    cached_download(model_file_url, cache_dir=cache_dir)
+    hf_hub_download(model_file_url, cache_dir=cache_dir)
 
 
 def load(
