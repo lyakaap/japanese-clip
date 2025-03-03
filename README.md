@@ -1,6 +1,8 @@
 # Japanese-CLIP
 ![rinna-icon](./data/rinna.png)
 
+※ transformers==4.49.0 の使用時にimportエラーが出たため対応したバージョン
+
 This repository includes codes for Japanese [CLIP (Contrastive Language-Image Pre-Training)](https://arxiv.org/abs/2103.00020) variants by [rinna Co., Ltd](https://rinna.co.jp/).
 
 | Table of Contents |
